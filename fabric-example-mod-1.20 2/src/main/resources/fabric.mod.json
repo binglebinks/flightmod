@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "flightmod",
+  "version": "1.0.0",
+  "name": "Flight Mod",
+  "description": "Press F to toggle survival flight!",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.flightmod.FlightMod"],
+    "client": ["com.flightmod.FlightModClient"]
+  },
+  "mixins": ["flightmod.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1"
+  }
+}
